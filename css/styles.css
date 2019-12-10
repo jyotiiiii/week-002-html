@@ -8,14 +8,14 @@ p {
   color: red;
 }
 .button {
-    float: right;
+  float: right;
 }
 #toggle {
-    float: right;
+  float: right;
 }
 div {
-    border: 10px;
+  border: 10px;
 }
 .row {
-  width:  50%;
+  width: 50%;
 }
