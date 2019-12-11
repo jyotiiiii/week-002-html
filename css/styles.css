@@ -23,6 +23,11 @@ h3 {
 
 h6 {
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  /* position: absolute; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
 }
 /********************** Classes *************************/
 
@@ -33,13 +38,38 @@ h6 {
 
 .me {
   margin: auto;
-  width: 15%;
+  width: 12%;
 }
 .nav {
   position: relative;
   margin-top: 50px;
 }
 .top-container {
+  padding-top: 50px;
+  position: relative;
+}
+
+.heart-container {
+  width: 12%;
+  position: relative;
+  margin: auto;
+}
+
+.add-task {
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+}
+
+.add-random {
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  right: 0;
+}
+
+.middle-container {
   padding-top: 50px;
   position: relative;
 }
@@ -54,6 +84,7 @@ h6 {
   position: absolute;
   opacity: 0.85;
   width: 7%;
+  left: 505px;
 }
 .hamburger {
   display: inline-block;
@@ -66,7 +97,7 @@ h6 {
   height: 5px;
   background-color: black;
   margin: 6px 0;
-  border-radius: 25%;
+  border-radius: 3px;
 }
 /********************** Ids *************************/
 
