@@ -6,13 +6,13 @@ font-family: 'Montserrat', sans-serif; */
 body {
   margin: 0;
   text-align: center;
-  /* background-color: #e0ebe8; */
   background: rgb(34, 193, 195);
   background: linear-gradient(
     13deg,
     rgba(34, 193, 195, 0.4231442577030813) 0%,
     rgba(244, 45, 253, 0.12622549019607843) 100%
   );
+  background-repeat: no-repeat;
 }
 
 h3 {
@@ -22,30 +22,38 @@ h3 {
 }
 
 h6 {
+  /* Score */
   color: white;
   font-family: 'Montserrat', sans-serif;
-  /* position: absolute; */
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 5px;
+  margin: 5px 0 0 0;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 /********************** Classes *************************/
 
+/* Title */
 .kinda {
   margin: auto;
   width: 15%;
 }
 
+/* Heart logo */
 .me {
   margin: auto;
   width: 12%;
 }
+
+/* Score */
 .nav {
   position: relative;
   margin-top: 50px;
 }
 .top-container {
-  padding-top: 50px;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -60,13 +68,19 @@ h6 {
   position: absolute;
   margin: auto;
   left: 0;
+  /* width: 15px; */
 }
 
-.add-random {
+.random-task {
   display: inline-block;
   position: absolute;
   margin: auto;
   right: 0;
+  /* width: 10%; */
+}
+
+.plus {
+  width: 25px;
 }
 
 .middle-container {
@@ -74,6 +88,89 @@ h6 {
   position: relative;
 }
 
+.form-container {
+  padding-top: 10px;
+  position: relative;
+  visibility: hidden;
+}
+
+.main-container {
+  padding-top: 15px;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  height: 500px;
+}
+
+.task-row {
+  /* making the width less than block will override the centre alignment of the body
+  so need to make margin: auto; to get it back to the centre */
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  line-height: 2;
+}
+.task-text1 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+/* .task-text2 {
+  display: inline-block;
+  position: absolute; 
+  left: 0;
+}
+
+.task-text3 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.task-text4 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+} */
+
+/* .task-done {
+  display: inline-block;
+}
+*/
+/* .task-delete {
+  width: fit-content;
+  margin: 0;
+} */
+.skill-row {
+  /* making the width less than block will override the centre alignment of the body
+  so need to make margin: auto; to get it back to the centre */
+  width: 50%;
+  margin: 0;
+  text-align: left;
+  line-height: 2;
+}
+.printing {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.done {
+  width: 30px;
+  float: right;
+}
+
+.delete {
+  width: 26px;
+  float: right;
+  margin-top: 2px;
+  left: 0;
+}
+
+.bottom-container {
+  visibility: hidden;
+}
 .top-snowflake {
   position: absolute;
   right: 460px;
@@ -99,6 +196,10 @@ h6 {
   margin: 6px 0;
   border-radius: 3px;
 }
+
+.copyright {
+  font-size: 0.5rem;
+}
 /********************** Ids *************************/
 
 #score-dot {
@@ -109,4 +210,8 @@ h6 {
   display: inline-block;
   position: absolute;
   left: 70px;
+}
+
+#giphy {
+  width: 8%;
 }
