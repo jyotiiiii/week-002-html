@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  text-align: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    13deg,
+    rgba(34, 193, 195, 0.4231442577030813) 0%,
+    rgba(244, 45, 253, 0.12622549019607843) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+/* Score */
+.navbutton {
+  /* position: relative; */
+  margin-top: 5px;
+}
+
+.dark-toggle {
+  color: black;
+}
+.jumbotron {
+  background: none;
+  width: 50%;
+}
+
+/* Title */
+.kinda {
+  margin: auto;
+  width: 15%;
+}
+
+/* Heart logo */
+.me {
+  margin: auto;
+  width: 12%;
+}
+
+/********************** Ids *************************/
+
+#score-dot {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border-radius: 50%;
+  /* display: inline-block; */
+  /* position: absolute; */
+  /* left: 70px; */
+}
+
+h6 {
+  /* Score */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 5px;
+}
