@@ -1,0 +1,227 @@
+/* Google Fonts
+font-family: 'Sacramento', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+/********************** Tags *************************/
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  text-align: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    13deg,
+    rgba(34, 193, 195, 0.4231442577030813) 0%,
+    rgba(244, 45, 253, 0.12622549019607843) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+h3 {
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
+  margin: 0;
+}
+
+h6 {
+  /* Score */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+/********************** Classes *************************/
+
+/* Title */
+.kinda {
+  margin: auto;
+  width: 15%;
+}
+
+/* Heart logo */
+.me {
+  margin: auto;
+  width: 12%;
+}
+
+/* Score */
+.nav {
+  position: relative;
+  margin-top: 50px;
+}
+.top-container {
+  padding-top: 20px;
+  position: relative;
+}
+
+.heart-container {
+  width: 12%;
+  position: relative;
+  margin: auto;
+}
+
+.add-task {
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  /* width: 15px; */
+}
+
+.random-task {
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  /* width: 10%; */
+}
+
+.plus {
+  width: 25px;
+}
+
+.middle-container {
+  padding-top: 50px;
+  position: relative;
+}
+
+.form-container {
+  padding-top: 10px;
+  position: relative;
+  visibility: hidden;
+}
+
+.main-container {
+  padding-top: 15px;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  height: 200px;
+}
+
+.task-row {
+  /* making the width less than block will override the centre alignment of the body
+  so need to make margin: auto; to get it back to the centre */
+
+  margin: auto;
+  text-align: left;
+}
+.task-text1 {
+  display: inline-block;
+  left: 0;
+}
+
+.cross {
+  position: absolute;
+  right: 0;
+}
+
+/* .task-text2 {
+  display: inline-block;
+  position: absolute; 
+  left: 0;
+}
+
+.task-text3 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.task-text4 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+} */
+
+/* .task-done {
+  display: inline-block;
+}
+*/
+/* .task-delete {
+  width: fit-content;
+  margin: 0;
+} */
+.skill-row {
+  /* making the width less than block will override the centre alignment of the body
+  so need to make margin: auto; to get it back to the centre */
+  width: 50%;
+  margin: 0;
+  text-align: left;
+  line-height: 2;
+}
+.printing {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.done {
+  width: 30px;
+  float: right;
+  padding: 5px;
+}
+
+.delete {
+  width: 24px;
+  float: right;
+  margin-top: 3px;
+  left: 0;
+  padding: 5px;
+}
+
+.bottom-container {
+  /* visibility: hidden; */
+}
+.top-snowflake {
+  position: absolute;
+  right: 460px;
+  width: 5%;
+}
+
+.bottom-snowflake {
+  position: absolute;
+  opacity: 0.85;
+  width: 7%;
+  left: 505px;
+}
+.hamburger {
+  display: inline-block;
+  position: absolute;
+  right: 70px;
+}
+
+.toggle {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  border-radius: 3px;
+}
+
+.copyright {
+  font-size: 0.5rem;
+}
+/********************** Ids *************************/
+
+#score-dot {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+}
+
+#giphy {
+  width: 8%;
+}

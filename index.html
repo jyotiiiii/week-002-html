@@ -1,153 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jyoti Sharma</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/d9683932a9.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>kinda</title>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-light">
+        <!-- "navbar-expand-lg" in the nav tag will uncollapse the handburger-->
+        <!-- if you place navbar-brand below the button the brand will float right, 
+            above the button the brand stays to left-->
+        <a class="navbar-brand" href="#">
+            <!-- <div class="nav"> -->
+            <div id="score-dot">
+                <h6>89</h6>
+            </div>
+        </a>
 
-    <div class="nav">
-        <div id="score-dot">
-            <h6>89</h6>
-        </div>
-
-        <div class="hamburger">
-            <div class="toggle"><a class="" href="#"></a></div>
-            <div class="toggle"><a class="" href="#"></a></div>
-            <div class="toggle"><a class="" href="#"></a></div>
-        </div>
-    </div>
-
-    <div class="top-container">
-        <img class="top-snowflake" src="images\snowflake.png" alt="snowflake-img">
-        <a class="" href="css\index_bootstrap.html" target="_blank"><img class="kinda" src="images\kinda.svg"
-                alt="kinda-img"></a>
-        <!-- <h1>kinda</h1> -->
-        <h3>Christmas Edition</h3>
-        <img class="bottom-snowflake" src="images\snowflake.png" alt="snowflake-img">
-        <img class="me" src="images\heartlogo.svg" alt="my-heart-img">
-    </div>
-
-    <div class="heart-container">
-
-        <div class="add-task">
-            <img class="plus" src="images\add.svg" alt="plus-img">
-        </div>
-
-        <div class="random-task">
-            <img class="plus" src="images\favorite-heart-button.svg" alt="random-heart-img">
-        </div>
-
-    </div>
-
-    <div class="form-container">
-        <div class="task-form">
-            <form action="">
-                <input type="text" name="TaskAdd" value="Do something kind">
-                <input type="submit" value="Add">
-            </form>
-        </div>
-    </div>
-
-    <div class="main-container">
-        <!-- <div class="skill-row">
-            <img class="printing"
-                src="https://jyotisharmacouk.files.wordpress.com/2018/12/willow-plate-duo.jpg?w=342&h=335&zoom=2"
-                alt="design-img">
-            <h3>Lorem Ipsum Dolor</h3>
-            <p class="description2">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum,
-                lacus quis mauris.
-                Curabitur wisi, quisque vel eu, rutrum nam.</p>
-        </div> -->
-        <div class="task-row">
-            <div class="task-text1">
-                <p>Meditate 10 mins</p>
+        <button class="navbar-toggler navbutton nav-button" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="">
+                <div class="toggle"><a class="" href="#"></a></div>
+                <div class="toggle"><a class="" href="#"></a></div>
+                <div class="toggle"><a class="" href="#"></a></div>
             </div>
 
-            <div class="cross"><img class="done" src="images\check-mark.svg" alt="check-img">
-                <img class="delete" src="images\delete.svg" alt="delete-img"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- ml-auto (margin left auto class floats the items to the right) -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active  ml-auto">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  ml-auto">
+                    <a class="nav-link" href="#">Kindness</a>
+                </li>
+                <li class="nav-item ml-auto">
+                    <a class="nav-link " href="#">How it works</a>
+                </li>
+                <li class="nav-item ml-auto">
+                    <form class="form-inline my-2 my-md-0">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    </form>
+                </li>
+            </ul>
 
         </div>
+    </nav>
 
-        <div class="task-row">
-            <div class="task-text1">
-                <p>Read something uplifting</p>
+
+    <!-- Header -->
+    <div class="jumbotron ">
+        <div class="container text-center">
+
+            <a class="" href="/index_bootstrap.html" target="_blank"><img class="kinda" src="images/kinda.svg"
+                    alt="kinda-img"></a>
+
+            <img class="me" src="images/heartlogo.svg" alt="my-heart-img">
+
+            <!-- Add a Task Section -->
+
+            <div class="row">
+                <div class="col">
+                    <a class="action-button" href="#" role="button"><i class="fas fa-plus fa-lg"></i></a>
+                    <a class="action-button" href="#" role="button"><i class="far fa-heart fa-lg"></i></a>
+                </div>
             </div>
-
-            <div class="cross"><img class="done" src="images\check-mark.svg" alt="check-img">
-                <img class="delete" src="images\delete.svg" alt="delete-img"></div>
 
         </div>
     </div>
 
-    <!-- <div class="task-row">
-            <div class="task-text2">
-                <p>Read something uplifting</p>
+    <!-- Pop Up Form (After add a task button is clicked) -->
+    <div class="container hidden-form">
+        <div class="row">
+            <div class="col-md-4 "></div>
+            <div class="col-md-5 ">
+                <form class="form-inline ">
+                    <!-- <div class="form-group mb-2"> -->
+                    <!-- <label for="staticEmail2" class="sr-only">Email</label> -->
+                    <!-- <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com"> -->
+                    <!-- </div> -->
+                    <div class="form-group mx-sm-3 mb-2">
+                        <!-- <label for="inputPassword2" class="sr-only">Enter a kinda thing to do</label> -->
+                        <input type="password" class="form-control" id="inputPassword2"
+                            placeholder="Enter a kinda thing to do">
+                    </div>
+                    <button type="submit" class="btn btn-info mb-2">Add Task</button>
+                </form>
             </div>
-            <div class="task-delete">
-            </div>
-            <div class="task-done">
-            </div>
+            <div class="col-md-4 "></div>
         </div>
-
-        <div class="task-row">
-            <div class="task-text3">
-                <p>Go to bed early</p>
-            </div>
-            <div class="task-delete">
-            </div>
-            <div class="task-done">
-            </div>
-        </div>
-
-        <div class="task-row4">
-            <div class="task-text">
-                <p>Appreciate 3 things about myself today</p>
-            </div>
-            <div class="task-delete">
-            </div>
-            <div class="task-done">
-            </div>
-        </div> -->
-
-
-
-
-
-
-
-
-
-    <div class="bottom-container">
-        <h3>What To-Do to be kinder</h3>
-        <a class="" href="inspiration.html" target="_blank">Inspiration</a>
-        <!-- <img id="giphy" src="https://media.giphy.com/media/5C24QD9nS3FA6vJoGP/giphy.gif" alt="self-love-img"> -->
-        <p class="copyright">©
-            <script>document.write(new Date().getFullYear());</script> Jyoti Sharma.</p>
     </div>
 
+
+    <!-- Task Section -->
+    <div class="container-fluid">
+
+        <div class="row justify-content-center pb-3">
+            <div class="col-sm-9">
+
+                <div class="row">
+                    <div class="col-8 col-sm-6">
+                        This is a task
+                    </div>
+                    <div class="col-4 col-sm-6">
+                        <a class="action-button" href="#" role="button"><i class="fas fa-trash-alt fa-lg"></i></a>
+                        <a class="action-button" href="#" role="button"><i class="fas fa-check fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center pb-3">
+            <div class="col-sm-9">
+
+                <div class="row">
+                    <div class="col-8 col-sm-6">
+                        This is a task
+                    </div>
+                    <div class="col-4 col-sm-6">
+                        <a class="action-button" href="#" role="button"><i class="fas fa-trash-alt fa-lg"></i></a>
+                        <a class="action-button" href="#" role="button"><i class="fas fa-check fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center pb-3">
+            <div class="col-sm-9">
+
+                <div class="row">
+                    <div class="col-8 col-sm-6">
+                        This is a task
+                    </div>
+                    <div class="col-4 col-sm-6">
+                        <a class="action-button" href="#" role="button"><i class="fas fa-trash-alt fa-lg"></i></a>
+                        <a class="action-button" href="#" role="button"><i class="fas fa-check fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer" id="footer">
+        <i class="fab fa-twitter spaced-icon"></i>
+        <i class="fab fa-facebook-f spaced-icon"></i>
+        <i class="fab fa-instagram spaced-icon"></i>
+        <i class="fas fa-envelope spaced-icon"></i>
+        <p class="mb-3 text-muted copyright">Copyright ©
+            <script>document.write(new Date().getFullYear());</script> Jyoti Sharma</p>
+
+    </footer>
+
+
+    <!-- Optional JavaScript for Bootstrap (collapsing navbar) -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a
-        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-<!-- 
-        <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a
-                        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
