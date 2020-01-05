@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Sacramento&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/d9683932a9.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -13,7 +15,7 @@
     <title>kinda</title>
 </head>
 
-<body>
+<body class="text-center">
     <!-- Navigation Bar -->
 
     <nav class="navbar navbar-light">
@@ -27,9 +29,14 @@
             </div>
         </a>
 
-        <button class="navbar-toggler navbutton" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbutton nav-button" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <div class="toggle"><a class="" href="#"></a></div>
+                <div class="toggle"><a class="" href="#"></a></div>
+                <div class="toggle"><a class="" href="#"></a></div>
+            </div>
+
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -59,50 +66,117 @@
     <div class="jumbotron ">
         <div class="container text-center">
 
-            <a class="" href="css\index_bootstrap.html" target="_blank"><img class="kinda" src="images\kinda.svg"
+            <a class="" href="/index_bootstrap.html" target="_blank"><img class="kinda" src="images/kinda.svg"
                     alt="kinda-img"></a>
 
-            <img class="me" src="images\heartlogo.svg" alt="my-heart-img">
-        </div>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-    </div>
-    </div>
+            <img class="me" src="images/heartlogo.svg" alt="my-heart-img">
 
+            <!-- Add a Task Section -->
 
-    <body class="text-center">
-        <form class="form-signin AVAST_PAM_loginform">
-            <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72"
-                height="72">
-            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
-                autofocus="">
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-            <div class="checkbox mb-3">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
+            <div class="row">
+                <div class="col">
+                    <a class="action-button" href="#" role="button"><i class="fas fa-plus"></i></a>
+                    <a class="action-button" href="#" role="button"><i class="far fa-heart"></i></a>
+                </div>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
-        </form>
+
+        </div>
+    </div>
+
+    <!-- Pop Up Form (After add a task button is clicked) -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-4 "></div>
+            <div class="col-md-5 ">
+                <form class="form-inline ">
+                    <!-- <div class="form-group mb-2"> -->
+                    <!-- <label for="staticEmail2" class="sr-only">Email</label> -->
+                    <!-- <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com"> -->
+                    <!-- </div> -->
+                    <div class="form-group mx-sm-3 mb-2">
+                        <!-- <label for="inputPassword2" class="sr-only">Enter a kinda thing to do</label> -->
+                        <input type="password" class="form-control" id="inputPassword2"
+                            placeholder="Enter a kinda thing to do">
+                    </div>
+                    <button type="submit" class="btn btn-info mb-2">Add Task</button>
+                </form>
+            </div>
+            <div class="col-md-4 "></div>
+        </div>
+    </div>
 
 
-    </body>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <!-- Task Section -->
+    <div class="container-fluid ">
+
+
+
+        <div class="row text-left">
+            <div class="col-md-2">
+
+
+            </div>
+            <div class="col-md-6">
+
+                <p>This is a task</p>
+            </div>
+
+
+            <div class="col ml-auto">
+                <a class="" href="#" role="button"><i class="fas fa-plus"></i></a>
+                <a class="" href="#" role="button"><i class="far fa-heart"></i></a>
+            </div>
+            <div class="col-md-2">
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="" id="footer">
+        <i class="fab fa-twitter spaced-icon"></i>
+        <i class="fab fa-facebook-f spaced-icon"></i>
+        <i class="fab fa-instagram spaced-icon"></i>
+        <i class="fas fa-envelope spaced-icon"></i>
+        <p class="mb-3 text-muted copyright">Copyright ©
+            <script>document.write(new Date().getFullYear());</script> Jyoti Sharma</p>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
